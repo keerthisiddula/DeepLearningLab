@@ -15,7 +15,7 @@ model = Sequential()
 model.add(Dense(units=1, input_shape=(1,), activation='linear'))
 
 #compile
-model.compile(optimizer='sgd',loss='mean_squared_error')
+model.compile(optimizer='adam',loss='mean_squared_error')
  
 #Build a model
 model.fit(X,y,epochs=50)
